@@ -1,0 +1,258 @@
+Technical Assessment
+
+Objective
+Develop a clean and scalable Flutter E-Commerce application that demonstrates practical
+mid-level Flutter development skills including API integration, Firebase authentication, state
+management, pagination, cart handling, offline support, and responsive UI.
+
+Project Overview
+Build a Flutter E-Commerce App with the following features:
+● Google Authentication
+● Product Listing
+● Product Details
+● Cart Management
+● Pagination
+● Search & Filter
+● Location Display
+● Offline/Error Handling
+
+Mandatory Tech Stack
+Flutter Requirements
+● Latest Stable Flutter SDK
+● Null Safety Enabled
+● Proper folder structure
+● Reusable widgets/components
+State Management (Choose Any One)
+Preferred:
+
+Technical Assessment
+
+● Riverpod
+Other acceptable options:
+● Bloc/Cubit
+● Provider (if implemented cleanly)
+
+Firebase Integration
+Configure Firebase properly for:
+Android
+● google-services.json
+● SHA-1 setup
+iOS
+● GoogleService-Info.plist
+● Proper iOS Firebase configuration
+Required Firebase Feature
+● Firebase Authentication
+
+Authentication Module
+Implement Google Sign-In using Firebase Authentication.
+Requirements
+● Login with Google
+● Persistent login session
+● Logout functionality
+
+Technical Assessment
+
+● Auto-login if session exists
+● Proper error handling
+● Handle login cancellation gracefully
+
+Dashboard Screen
+After successful login, display:
+User Information
+● Profile image
+● Username
+● Email
+Current Device Location
+Fetch and display:
+● Human-readable address
+Handle Properly
+● Runtime permissions
+● Permission denied
+● Permanently denied
+● GPS disabled
+
+Product Listing Module
+Use API:
+https://dummyjson.com/products
+API Docs:
+
+Technical Assessment
+
+https://dummyjson.com/docs/products
+Product List Screen
+Display:
+● Product image
+● Product title
+● Price
+● Discount percentage
+● Rating
+● Brand
+● Stock status
+
+Pagination (Mandatory)
+Implement infinite scrolling with proper API pagination.
+Example:
+https://dummyjson.com/products?limit=10&skip=0
+https://dummyjson.com/products?limit=10&skip=10
+Requirements
+● Lazy loading / infinite scroll
+● Loading footer
+● Prevent duplicate API calls
+● Prevent multiple pagination triggers
+● Pull-to-refresh support
+● End-of-list handling
+
+Product Details Screen
+
+Technical Assessment
+
+On product click, navigate to details screen displaying:
+● Product image carousel
+● Product description
+● Price
+● Discounted price calculation
+● Rating
+● Category
+● Brand
+● Availability status
+
+Cart Module
+
+Features Required
+● Add products to cart
+● Prevent duplicate cart entries
+● Increase quantity
+● Decrease quantity
+● Remove item
+Dynamic State Updates
+Cart state must update instantly across:
+● Product listing screen
+● Product details screen
+● Cart screen
+Dynamic Price Calculation
+Implement:
+● Subtotal
+● Total items
+● Discount calculation
+● Final payable amount
+
+Technical Assessment
+
+Search & Filtering
+Implement:
+● Product search
+● Filter by category
+● Sort by:
+○ Price Low to High
+○ Price High to Low
+○ Rating
+
+Error Handling
+Handle properly:
+● API errors
+● Timeout
+● No internet
+● Empty states
+● Retry states
+Avoid:
+● Multiple snackbars/dialogs
+● Improper context usage
+
+Offline Support
+Implement:
+● Internet connectivity listener
+● Retry mechanism
+
+Technical Assessment
+
+Bonus:
+● Persist cart locally
+● Offline cached product listing
+
+Local Storage
+Use any one:
+● Hive
+● SharedPreferences
+● Isar
+Persist:
+● User session
+● Cart data
+
+Architecture Expectations
+Preferred:
+● Clean Architecture
+OR
+● Feature-based architecture
+Must include:
+● Repository layer
+● Service/API layer
+● Proper separation of concerns
+
+UI/UX Expectations
+
+Technical Assessment
+
+● Responsive UI
+● Portrait orientation
+● Proper SafeArea usage
+● No overflow issues
+● Consistent spacing & typography
+
+Performance Expectations
+● Optimized rebuilds
+● Efficient list rendering
+● Proper image handling/caching
+● Memory-conscious implementation
+
+Code Quality Expectations
+Evaluation will focus on:
+● Readability
+● Scalability
+● Reusability
+● Naming conventions
+● Null safety
+● Maintainability
+
+Bonus Points (Optional)
+If time permits:
+● Dark mode
+● Shimmer loading
+● Debounced search
+● Dependency Injection
+
+Technical Assessment
+
+● Unit/Widget testing
+
+Submission Requirements
+Submit:
+● Complete source code
+● APK build
+● README.md
+README Should Include
+● Setup steps
+● Architecture explanation
+● State management explanation
+● Third-party libraries used
+● Assumptions made
+
+Evaluation Criteria
+Area Weightag
+e
+Architecture & Code Quality 25%
+State Management 20%
+Firebase Authentication 15%
+API & Pagination Handling 15%
+Cart Logic & Dynamic Updates 10%
+UI/UX & Responsiveness 10%
+Error Handling & Edge Cases 5%
+
+Technical Assessment
+
+Important Notes
+● Focus on clean, production-ready implementation.
+● Avoid over-engineering.
+● Proper state synchronization and edge-case handling are important.
+● Functional UI alone is not sufficient for evaluation.
+● Copy-paste/template projects may be rejected.
+Best of luck!
